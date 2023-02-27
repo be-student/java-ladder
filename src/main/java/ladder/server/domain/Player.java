@@ -1,4 +1,4 @@
-package ladder.domain;
+package ladder.server.domain;
 
 /**
  * 플레이어의 이름과 위치를 가지는 클래스

@@ -1,4 +1,4 @@
-package ladder.domain;
+package ladder.server.domain;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -17,7 +17,7 @@ public class Players {
 
     private final List<Player> players = new ArrayList<>();
 
-    Players(List<String> playerNames) {
+    public Players(List<String> playerNames) {
         validatePlayerNames(playerNames);
         for (int i = 0; i < playerNames.size(); i++) {
             players.add(new Player(playerNames.get(i), i));
@@ -34,13 +34,13 @@ public class Players {
         return players.size();
     }
 
-    List<String> getPlayerNames() {
+    public List<String> getPlayerNames() {
         return players.stream()
                 .map(Player::getName)
                 .collect(Collectors.toList());
     }
 
-    Map<String, Position> calculateResult(Ladder ladder) {
+    public Map<String, Position> calculateResult(Ladder ladder) {
         //그냥 바로 collect toMap 만 호출하면 순서가 보장이 되지 않아서 LinkedHashMap 으로 감싸준다
         return players.stream()
                 .collect(Collectors.toMap(

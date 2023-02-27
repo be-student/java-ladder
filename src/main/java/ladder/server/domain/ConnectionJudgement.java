@@ -1,4 +1,4 @@
-package ladder.domain;
+package ladder.server.domain;
 
 /**
  * 사다리가 연결되는지, 연결되지 않는지를 판단하는 인터페이스

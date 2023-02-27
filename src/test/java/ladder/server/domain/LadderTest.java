@@ -1,6 +1,6 @@
-package ladder.domain;
+package ladder.server.domain;
 
-import static ladder.domain.Ladder.of;
+import static ladder.server.domain.Ladder.of;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;

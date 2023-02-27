@@ -1,4 +1,4 @@
-package ladder.domain;
+package ladder.server.domain;
 
 /**
  * 결과의 이름을 검증하는 역할을 가진 클래스

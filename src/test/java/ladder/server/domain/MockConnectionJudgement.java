@@ -1,4 +1,6 @@
-package ladder.domain;
+package ladder.server.domain;
+
+import ladder.server.domain.ConnectionJudgement;
 
 /**
  * 원하는대로 연결 혹은 연결되지 않음을 판단하는 클래스

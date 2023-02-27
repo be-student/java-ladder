@@ -1,4 +1,4 @@
-package ladder.domain;
+package ladder.server.domain;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
  * <p>
  * Position 을 받아서 결과를 반환하는 역할을 가지고 있습니다
  */
-class Ladder {
+public class Ladder {
 
     private static final String MINIMUM_SIZE_MESSAGE = "최소 세로는 1보다 커야 합니다 합니다. 현재 세로 : 0";
     private static final int MINIMUM_HEIGHT = 1;
@@ -21,7 +21,7 @@ class Ladder {
         this.rows = rows;
     }
 
-    static Ladder of(int width, int height, ConnectionJudgement connectionJudgement) {
+    public static Ladder of(int width, int height, ConnectionJudgement connectionJudgement) {
         List<Row> rows = Stream.generate(() -> Row.valueOf(width, connectionJudgement))
                 .limit(height)
                 .collect(Collectors.toList());
@@ -34,7 +34,7 @@ class Ladder {
         }
     }
 
-    List<List<Boolean>> getRows() {
+    public List<List<Boolean>> getRows() {
         return rows.stream()
                 .map(Row::getPoints)
                 .collect(Collectors.toList());
