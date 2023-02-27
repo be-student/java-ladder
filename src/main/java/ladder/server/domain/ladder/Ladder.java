@@ -1,8 +1,9 @@
-package ladder.server.domain;
+package ladder.server.domain.ladder;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import ladder.server.domain.common.Position;
 
 /**
  * Ladder 는 Row 를 가지고 있습니다
@@ -40,7 +41,7 @@ public class Ladder {
                 .collect(Collectors.toList());
     }
 
-    Position calculateResult(Position position) {
+    public Position calculateResult(Position position) {
         Position result = position;
         for (Row row : rows) {
             result = row.calculateNextPosition(result);

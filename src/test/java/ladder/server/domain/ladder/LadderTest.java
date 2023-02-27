@@ -1,11 +1,12 @@
-package ladder.server.domain;
+package ladder.server.domain.ladder;
 
-import static ladder.server.domain.Ladder.of;
+import static ladder.server.domain.ladder.Ladder.of;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import java.util.List;
+import ladder.server.domain.common.Position;
 import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.DisplayNameGenerator.ReplaceUnderscores;
 import org.junit.jupiter.api.Test;

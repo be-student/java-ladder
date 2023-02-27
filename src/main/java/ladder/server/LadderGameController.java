@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import ladder.common.LadderGame;
-import ladder.server.domain.ConnectionJudgement;
-import ladder.server.domain.Ladder;
-import ladder.server.domain.Players;
-import ladder.server.domain.Position;
-import ladder.server.domain.Result;
+import ladder.server.domain.common.Position;
+import ladder.server.domain.ladder.ConnectionJudgement;
+import ladder.server.domain.ladder.Ladder;
+import ladder.server.domain.player.Players;
+import ladder.server.domain.result.Result;
 
 /**
  * 이 클래스는 사다리 게임에 대한 실제 로직을 담당하는 클래스 입니다

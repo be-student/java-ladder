@@ -1,9 +1,10 @@
-package ladder.server.domain;
+package ladder.server.domain.result;
 
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import ladder.server.domain.common.Position;
 
 /**
  * Result 는 결과의 이름, 위치들을 가지고 있는 클래스입니다

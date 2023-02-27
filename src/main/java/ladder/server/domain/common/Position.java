@@ -1,4 +1,4 @@
-package ladder.server.domain;
+package ladder.server.domain.common;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,15 +34,15 @@ public class Position {
         }
     }
 
-    Position moveRight() {
+    public Position moveRight() {
         return valueOf(index + 1);
     }
 
-    Position moveLeft() {
+    public Position moveLeft() {
         return valueOf(index - 1);
     }
 
-    int getIndex() {
+    public int getIndex() {
         return index;
     }
 

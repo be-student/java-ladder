@@ -1,10 +1,12 @@
-package ladder.server.domain;
+package ladder.server.domain.player;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import ladder.server.domain.common.Position;
+import ladder.server.domain.ladder.Ladder;
 
 /**
  * 참가자의 이름과 위치를 가지고 있는 Player 를 가지고 있는 클래스입니다

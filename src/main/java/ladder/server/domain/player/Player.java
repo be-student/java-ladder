@@ -1,4 +1,7 @@
-package ladder.server.domain;
+package ladder.server.domain.player;
+
+import ladder.server.domain.common.Position;
+import ladder.server.domain.ladder.Ladder;
 
 /**
  * 플레이어의 이름과 위치를 가지는 클래스

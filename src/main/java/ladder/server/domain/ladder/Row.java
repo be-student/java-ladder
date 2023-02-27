@@ -1,8 +1,9 @@
-package ladder.server.domain;
+package ladder.server.domain.ladder;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import ladder.server.domain.common.Position;
 
 /**
  * Row 는 Point 를 가지고 있으며, Point 는 왼쪽으로 이동가능, 오른쪽으로 이동가능, 이동하지 않음 상태를 표현하고 있음

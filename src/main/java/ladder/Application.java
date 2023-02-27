@@ -5,7 +5,7 @@ import ladder.client.LadderClientController;
 import ladder.client.view.InputView;
 import ladder.client.view.OutputView;
 import ladder.server.LadderGameController;
-import ladder.server.domain.RandomConnectionJudgement;
+import ladder.server.domain.ladder.RandomConnectionJudgement;
 
 public class Application {
 

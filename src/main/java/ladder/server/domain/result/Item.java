@@ -1,5 +1,7 @@
-package ladder.server.domain;
+package ladder.server.domain.result;
 
+
+import ladder.server.domain.common.Position;
 
 /**
  * 결과 품목의 위치와 이름을 가지는 클래스
