@@ -4,7 +4,8 @@ import java.util.Scanner;
 import ladder.client.LadderClientController;
 import ladder.client.view.InputView;
 import ladder.client.view.OutputView;
-import ladder.server.LadderGameController;
+import ladder.common.LadderGame;
+import ladder.server.LadderGameImpl;
 import ladder.server.domain.ladder.RandomConnectionJudgement;
 
 public class Application {
@@ -18,8 +19,8 @@ public class Application {
         ladderClientController.play();
     }
 
-    private static LadderGameController getLadderGame() {
-        return new LadderGameController(new RandomConnectionJudgement());
+    private static LadderGame getLadderGame() {
+        return new LadderGameImpl(new RandomConnectionJudgement());
     }
 
     private static OutputView getOutputView() {

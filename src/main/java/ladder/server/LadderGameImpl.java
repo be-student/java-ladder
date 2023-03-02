@@ -14,7 +14,7 @@ import ladder.server.domain.result.Result;
 /**
  * 이 클래스는 사다리 게임에 대한 실제 로직을 담당하는 클래스 입니다
  */
-public class LadderGameController implements LadderGame {
+public class LadderGameImpl implements LadderGame {
 
     private final ConnectionJudgement connectionJudgement;
     private Players players;
@@ -22,7 +22,7 @@ public class LadderGameController implements LadderGame {
     private Result result;
 
 
-    public LadderGameController(ConnectionJudgement connectionJudgement) {
+    public LadderGameImpl(ConnectionJudgement connectionJudgement) {
         this.connectionJudgement = connectionJudgement;
     }
 
