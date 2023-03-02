@@ -1,15 +1,20 @@
-package ladder.domain;
+package ladder.server;
 
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import ladder.common.LadderGame;
+import ladder.server.domain.common.Position;
+import ladder.server.domain.ladder.ConnectionJudgement;
+import ladder.server.domain.ladder.Ladder;
+import ladder.server.domain.player.Players;
+import ladder.server.domain.result.Result;
 
 /**
  * 이 클래스는 사다리 게임에 대한 실제 로직을 담당하는 클래스 입니다
  */
-public class LadderGameController implements LadderGame {
+public class LadderGameImpl implements LadderGame {
 
     private final ConnectionJudgement connectionJudgement;
     private Players players;
@@ -17,7 +22,7 @@ public class LadderGameController implements LadderGame {
     private Result result;
 
 
-    public LadderGameController(ConnectionJudgement connectionJudgement) {
+    public LadderGameImpl(ConnectionJudgement connectionJudgement) {
         this.connectionJudgement = connectionJudgement;
     }
 

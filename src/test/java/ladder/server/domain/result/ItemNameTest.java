@@ -1,4 +1,4 @@
-package ladder.domain;
+package ladder.server.domain.result;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;

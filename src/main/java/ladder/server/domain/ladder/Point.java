@@ -1,6 +1,7 @@
-package ladder.domain;
+package ladder.server.domain.ladder;
 
 import java.util.function.UnaryOperator;
+import ladder.server.domain.common.Position;
 
 /**
  * 사다리의 가로 세로의 교차점을 나타내는 클래스
