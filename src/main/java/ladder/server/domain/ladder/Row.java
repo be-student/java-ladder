@@ -42,9 +42,9 @@ public class Row {
         int lastIndex = points1.size() - 1;
         if (points1.get(lastIndex) == Point.RIGHT) {
             points1.add(Point.LEFT);
-        } else {
-            points1.add(Point.NONE);
+            return;
         }
+        points1.add(Point.NONE);
     }
 
 
